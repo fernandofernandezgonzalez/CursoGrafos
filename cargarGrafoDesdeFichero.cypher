@@ -1,8 +1,8 @@
-LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/fernandofernandezgonzalez/CursoGrafos/master/Crew.txt' AS line CREATE (:Crew{ id:line.Id, name: line.Name})
+LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/fernandofernandezgonzalez/CursoGrafos/master/Crew.txt' AS line 
+CREATE (:Crew{ id:line.Id, name: line.Name});
 
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/fernandofernandezgonzalez/CursoGrafos/master/Matrix.txt' AS line 
-CREATE (:Matrix{id:line.Id, name: line.Name})
-
+CREATE (:Matrix{id:line.Id, name: line.Name});
 
 LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/fernandofernandezgonzalez/CursoGrafos/master/KNOWS.txt' 
 as line 
